@@ -28,8 +28,7 @@ php artisan jetstream:install livewire
 
 ### Actualizar Mix
 ```
-npm install
-npm run dev
+npm install && npm run dev
 ```
 
 ## Ejecutar migraciones
@@ -38,5 +37,5 @@ Actualizar la configuracion de la base en el archivo .dev
 Por defecto, poner en todo laravel
 
 ```
-php artisan migrate
+php artisan migrate:fresh
 ```
