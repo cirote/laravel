@@ -39,3 +39,8 @@ Por defecto, poner en todo laravel
 ```
 php artisan migrate:fresh
 ```
+
+Modificar permisos de ficheros
+```
+chmod 777 storage/ -R
+```
