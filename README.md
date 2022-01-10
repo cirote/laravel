@@ -48,13 +48,10 @@ chmod 777 storage/ -R
 chmod 777 bootstrap/ -R
 ```
 
-## Instalar gestor gráfico de modelos
+## Instalar gestor gráfico de migraciones
 ```
-composer require mtolhuys/laravel-schematics --dev
-```
-```
-php artisan schematics:install
+composer require rezaamini-ir/migrator --dev
 ```
 
-Se usa misitio.desa/schematics
+Se usa misitio.desa/migrator
 
