@@ -21,6 +21,12 @@ Reemplazar locate en el archivo config/app.php
 composer require laravel/jetstream
 ```
 
+Si se quiere habilitar las fotos de perfil, hay que editar el archivo config/jetstream y desmarcar la opcion. 
+Despues, hay que ejecutar
+```
+php artisan storage:link
+```
+
 ## Instalar LiveWire
 ```
 php artisan jetstream:install livewire
