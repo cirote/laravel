@@ -27,6 +27,8 @@ Despues, hay que ejecutar
 php artisan storage:link
 ```
 
+Si se quiere quitar la validacion de dos factores, el registro de nuevos usuarios u otras configuraciones de ingreso, hay que editar el archivo config/fortify y desmarcar la opcion correspondiente. 
+
 ## Instalar LiveWire
 ```
 php artisan jetstream:install livewire
