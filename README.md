@@ -61,5 +61,10 @@ chmod 777 bootstrap/ -R
 composer require rezaamini-ir/migrator --dev
 ```
 
+## Instalar barra de desarrollo
+```
+composer require barryvdh/laravel-debugbar --dev
+```
+
 Se usa misitio.desa/migrator
 
