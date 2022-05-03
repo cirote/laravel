@@ -50,10 +50,7 @@ php artisan migrate:fresh
 
 ## Modificar permisos de ficheros
 ```
-chmod 777 storage/ -R
-```
-```
-chmod 777 bootstrap/ -R
+chmod 777 storage/ -R && chmod 777 bootstrap/ -R
 ```
 
 ## Instalar gestor gráfico de migraciones
