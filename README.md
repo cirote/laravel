@@ -57,11 +57,17 @@ chmod 777 storage/ -R && chmod 777 bootstrap/ -R
 ```
 composer require rezaamini-ir/migrator --dev
 ```
+Se usa misitio.desa/migrator
 
 ## Instalar barra de desarrollo
 ```
 composer require barryvdh/laravel-debugbar --dev
 ```
 
-Se usa misitio.desa/migrator
+## Instalar API
+```
+composer require cloudcreativity/laravel-json-api
+
+composer require --dev "cloudcreativity/json-api-testing"
+```
 
