@@ -7,36 +7,9 @@ Instrucciones para la instalacion de un proyecto base con Laravel
 composer create-project laravel/laravel .
 ```
 
-## Actualizar paquete de idiomas
-
+## Modificar permisos de ficheros
 ```
-composer require "overtrue/laravel-lang:~5.0"
-```
-
-Reemplazar locate en el archivo config/app.php
-
-## Instalar JetStream
-
-```
-composer require laravel/jetstream
-```
-
-Si se quiere habilitar las fotos de perfil, hay que editar el archivo config/jetstream y desmarcar la opcion. 
-Despues, hay que ejecutar
-```
-php artisan storage:link
-```
-
-Si se quiere quitar la validacion de dos factores, el registro de nuevos usuarios u otras configuraciones de ingreso, hay que editar el archivo config/fortify y desmarcar la opcion correspondiente. 
-
-## Instalar LiveWire
-```
-php artisan jetstream:install livewire
-```
-
-## Actualizar Mix
-```
-npm install && npm run dev
+chmod 777 storage/ -R && chmod 777 bootstrap/ -R
 ```
 
 ## Ejecutar migraciones
@@ -48,11 +21,31 @@ Por defecto, poner en todo laravel
 php artisan migrate:fresh
 ```
 
-## Modificar permisos de ficheros
+## Actualizar paquete de idiomas
+
 ```
-chmod 777 storage/ -R && chmod 777 bootstrap/ -R
+composer require "overtrue/laravel-lang:~5.0"
 ```
 
+Reemplazar locate en el archivo config/app.php
+
+## Instalar LiveWire
+```
+composer require livewire/livewire
+```
+
+## Instalar Parsedown
+```
+composer require erusev/parsedown
+```
+
+## Instalar visor web de rutas
+```
+composer require garygreen/pretty-routes --dev
+```
+Se usa misitio.desa/routes
+
+composer require garygreen/pretty-routes
 ## Instalar gestor gráfico de migraciones
 ```
 composer require rezaamini-ir/migrator --dev
@@ -69,5 +62,24 @@ composer require barryvdh/laravel-debugbar --dev
 composer require cloudcreativity/laravel-json-api
 
 composer require --dev "cloudcreativity/json-api-testing"
+```
+
+## Instalar JetStream
+
+```
+composer require laravel/jetstream
+```
+
+Si se quiere habilitar las fotos de perfil, hay que editar el archivo config/jetstream y desmarcar la opcion. 
+Despues, hay que ejecutar
+```
+php artisan storage:link
+```
+
+Si se quiere quitar la validacion de dos factores, el registro de nuevos usuarios u otras configuraciones de ingreso, hay que editar el archivo config/fortify y desmarcar la opcion correspondiente. 
+
+## Actualizar Mix
+```
+npm install && npm run dev
 ```
 
